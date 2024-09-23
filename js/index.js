@@ -13,7 +13,7 @@ document.getElementById('noakhali-btn').addEventListener('click', function(){
         const div=document.createElement('div')
 
         const h1=document.createElement('h1')
-        h1.innerText=`${totalCampaignAmount} Taka is Donated for famine-2024 at Feni, Bangladesh`
+        h1.innerText=`${donationInputField} Taka is Donated for famine-2024 at Noakhali, Bangladesh`
         const p=document.createElement('p')
         p.innerText=`Date:${new Date().toLocaleDateString()} (Bangladesh Standard Time)`
         div.appendChild(h1)
@@ -28,7 +28,6 @@ document.getElementById('noakhali-btn').addEventListener('click', function(){
 })
 document.getElementById('feni-btn').addEventListener('click', function(){
     const feniInputField=showDonateAmount('feni-input-field')
-
     if(feniInputField>0 && isNaN(Number)){
         const mainBalance=showDonateAmounttext('main-balance')
         const feniCampaignAmount=showDonateAmounttext('feni-campaign-amount')
@@ -42,7 +41,7 @@ document.getElementById('feni-btn').addEventListener('click', function(){
         const h1=document.createElement('h1')
         const p=document.createElement('p')
         p.innerText=`Date: ${new Date().toLocaleDateString()} (Bangladesh Standard Time)`
-        h1.innerText=`${totalFeniCampaignAmount} Taka is Donated for Flood Relief in Feni,Bangladesh`
+        h1.innerText=`${feniInputField} Taka is Donated for Flood Relief in Feni,Bangladesh`
         div.appendChild(h1)
         div.appendChild(p)
         document.getElementById('history-section').appendChild(div)
@@ -69,7 +68,7 @@ document.getElementById('quota-btn').addEventListener('click', function(){
         const h1=document.createElement('h1')
         const p=document.createElement('p')
         p.innerText=`Date: ${new Date().toLocaleDateString()} (Bangladesh Standard Time)`
-        h1.innerText=`${totalQuotaCampaignAmount} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`
+        h1.innerText=`${quotaInputField} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`
         div.appendChild(h1)
         div.appendChild(p)
         document.getElementById('history-section').appendChild(div)
