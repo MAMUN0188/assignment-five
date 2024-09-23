@@ -8,9 +8,8 @@ function showDonateAmounttext(id){
     const seeResultText=parseFloat(seeResult)
     return seeResultText
 }
-// function showHiddenSection(id){
-//     document.getElementById('campaign-section').classList.add('hidden')
-//     document.getElementById('history-section').classList.add('hidden')
-
-//     document.getElementById(id).classList.remove('hidden')
-// }
+function showButtonValue(id){
+    document.getElementById('campaign-section').classList.add('hidden')
+    document.getElementById('history-section').classList.add('hidden')
+    document.getElementById(id).classList.remove('hidden')
+}
