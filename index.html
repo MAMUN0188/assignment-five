@@ -16,11 +16,12 @@
 </head>
 
 <body class="lexend">
-    <header class="">
-        <div class="bg-[#F9F7F3] pt-2 pb-7">
+    <header class="navigate">
+        <div class="bg-[#F9F7F3] pt-2 pb-4">
             <div class="navbar lg:mx-auto ">
                 <div class="navbar-start relative lg:ml-20">
-                    <button class="btn bg-[#B4F461] hover:bg-[#B4F461] lg:w-24 lg:text-base text-sm">Blog</button>
+                    <a href="./home.html"
+                        class="btn bg-[#B4F461] hover:bg-[#B4F461] lg:w-24 lg:text-base text-sm">Blog</a>
                 </div>
                 <div class="navbar-center relative lg:right-0 right-3 lg:gap-3 gap-1">
                     <img class="lg:w-8 w-5" src="assets/logo.png" alt="">
@@ -28,26 +29,28 @@
                 </div>
                 <div class="navbar-end relative lg:mr-20">
                     <p class="flex lg:gap-2 gap-1 lg:text-base text-sm font-bold"><img class="w-5" src="assets/coin.png"
-                            alt=""><span class=" lg:text-base text-sm font-bold">5500</span>BDT</p>
+                            alt=""><span id="main-balance" class=" lg:text-base text-sm font-bold">5500</span>BDT</p>
                 </div>
             </div>
         </div>
-        <div class="justify-center lg:pt-16 pt-8 gap-3 flex">
-            <button class="btn bg-[#B4F461] lg:text-xl text-sm lg:w-36 w-28 lg:h-12 h-8">Donation</button>
-            <button class="btn border bg-white lg:text-xl text-sm lg:w-36 w-28 lg:h-12 h-8">History</button>
+        <div class="justify-center pb-8 pt-8 gap-3 flex">
+            <button id="donation-btn" class="btn bg-[#B4F461] lg:text-xl text-sm lg:w-36 w-28 lg:h-12 h-8">Donation</button>
+            <button id="history-btn" class="btn border bg-white lg:text-xl text-sm lg:w-36 w-28 lg:h-12 h-8">History</button>
         </div>
     </header>
 
     <main>
-        <div>
+        <div id="campaign-section" class="">
             <!-- Hero copy -->
             <div class="hero mt-8">
                 <div class="hero-content lg:inline-flex block border rounded-lg">
                     <img src="assets/noakhali.png" class="lg:w-[49%] mx-auto rounded-lg shadow-2xl" />
                     <div class="lg:w-[49%] mx-auto">
-                        <p class="flex mt-7 lg:mt-0 gap-2 border w-40 pl-3 bg-gray-200 mb-4 rounded-md py-2 lg:text-base text-sm font-bold"><img class="w-5"
-                                src="assets/coin.png" alt=""><span
-                                class=" lg:text-base text-sm font-bold">0</span>BDT</p>
+                        <p
+                            class="flex mt-7 lg:mt-0 gap-2 border w-40 pl-3 bg-gray-200 mb-4 rounded-md py-2 lg:text-base text-sm font-bold">
+                            <img class="w-5" src="assets/coin.png" alt=""><span id="noakhali-campaign-amount"
+                                class="lg:text-base text-sm font-bold">0</span>BDT
+                        </p>
                         <h3 class="font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
                         <p class="py-6">
                             The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
@@ -59,8 +62,24 @@
                             efforts and making a positive impact on the lives of those in need.
                             donation will help provide essential sup
                         </p>
-                        <input type="text" placeholder="Write Donation Amount" class="input mb-5 input-bordered w-full max-w-2xl"/>
-                        <button class="btn btn-block bg-[#B4F461] hover:bg-[#B4F461]">Download Now</button>
+                        <input id="donation-input-field" type="text" placeholder="Write Donation Amount"
+                            class="input mb-5 input-bordered w-full max-w-2xl" />
+                        <!-- <button id="noakhali-btn" class="btn btn-block bg-[#B4F461] hover:bg-[#B4F461]"
+                            onclick="my_modal_1.showModal()">Donate Now</button>
+                         <dialog id="my_modal_1" class="modal text-center">
+                                <div class="modal-box">
+                                    <h2 class="text-4xl font-bold">Congrats!</h2>
+                                    <img class="w-8 mx-auto mt-3 mb-5" src="assets/coin.png" alt="">
+                                    <p class="py-4">You Have Donated For Humankind</p>
+                                    <h2 class="font-black">Successfully</h2>
+                                    <div class="modal-action relative lg:right-36 right-20">
+                                        <div >
+                                            <button class="btn">Close Confirmation</button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </dialog> -->
+                        <button id="noakhali-btn" class="btn btn-block bg-[#B4F461] hover:bg-[#B4F461]">Download Now</button>
                     </div>
                 </div>
             </div>
@@ -69,9 +88,11 @@
                 <div class="hero-content lg:inline-flex block border rounded-lg">
                     <img src="assets/feni.png" class="lg:w-[49%] mx-auto rounded-lg shadow-2xl" />
                     <div class="lg:w-[49%] mx-auto">
-                        <p class="flex mt-7 lg:mt-0 gap-2 border w-40 pl-3 bg-gray-200 mb-4 rounded-md py-2 lg:text-base text-sm font-bold"><img class="w-5"
-                                src="assets/coin.png" alt=""><span
-                                class=" lg:text-base text-sm font-bold">600</span>BDT</p>
+                        <p
+                            class="flex mt-7 lg:mt-0 gap-2 border w-40 pl-3 bg-gray-200 mb-4 rounded-md py-2 lg:text-base text-sm font-bold">
+                            <img class="w-5" src="assets/coin.png" alt=""><span id="feni-campaign-amount"
+                                class=" lg:text-base text-sm font-bold">600</span>BDT
+                        </p>
                         <h3 class="font-bold">Donate for Flood Relief in Feni,Bangladesh</h3>
                         <p class="py-6">
                             The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
@@ -83,8 +104,24 @@
                             efforts and making a positive impact on the lives of those in need.
                             donation will help provide essential sup
                         </p>
-                        <input type="text" placeholder="Write Donation Amount" class="input mb-5 input-bordered w-full max-w-2xl"/>
-                        <button class="btn btn-block bg-[#B4F461] hover:bg-[#B4F461]">Download Now</button>
+                        <input id="feni-input-field" type="text" placeholder="Write Donation Amount"
+                            class="input mb-5 input-bordered w-full max-w-2xl" />
+                        <button id="feni-btn" class="btn btn-block bg-[#B4F461] hover:bg-[#B4F461]">Download Now</button>
+                        <!-- <button id="feni-btn" class="btn btn-block bg-[#B4F461] hover:bg-[#B4F461]"
+                            onclick="my_modal_2.showModal()">Donate Now</button>
+                        <dialog id="my_modal_2" class="modal text-center">
+                            <div class="modal-box">
+                                <h2 class="text-4xl font-bold">Congrats!</h2>
+                                <img class="w-8 mx-auto mt-3 mb-5" src="assets/coin.png" alt="">
+                                <p class="py-4">You Have Donated For Humankind</p>
+                                <h2 class="font-black">Successfully</h2>
+                                <div class="modal-action relative lg:right-36 right-20">
+                                    <form  method="dialog ">
+                                        <button class="btn">Close Confirmation</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog> -->
                     </div>
                 </div>
             </div>
@@ -93,9 +130,11 @@
                 <div class="hero-content lg:inline-flex block border rounded-lg">
                     <img src="assets/quota-protest.png" class="lg:w-[49%] mx-auto rounded-lg shadow-2xl" />
                     <div class="lg:w-[49%] mx-auto">
-                        <p class="flex mt-7 lg:mt-0 gap-2 border w-40 pl-3 bg-gray-200 mb-4 rounded-md py-2 lg:text-base text-sm font-bold"><img class="w-5"
-                                src="assets/coin.png" alt=""><span
-                                class=" lg:text-base text-sm font-bold">2400</span>BDT</p>
+                        <p
+                            class="flex mt-7 lg:mt-0 gap-2 border w-40 pl-3 bg-gray-200 mb-4 rounded-md py-2 lg:text-base text-sm font-bold">
+                            <img class="w-5" src="assets/coin.png" alt=""><span id="quota-campaign-amount"
+                                class=" lg:text-base text-sm font-bold">2400</span>BDT
+                        </p>
                         <h3 class="font-bold">Aid for Injured in the Quota Movement</h3>
                         <p class="py-6">
                             The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
@@ -107,12 +146,30 @@
                             efforts and making a positive impact on the lives of those in need.
                             donation will help provide essential sup
                         </p>
-                        <input type="text" placeholder="Write Donation Amount" class="input mb-5 input-bordered w-full max-w-2xl"/>
-                        <button class="btn btn-block bg-[#B4F461] hover:bg-[#B4F461]">Download Now</button>
+                        <input id="quota-input-field" type="text" placeholder="Write Donation Amount"
+                            class="input mb-5 input-bordered w-full max-w-2xl" />
+                        <button id="quota-btn" class="btn btn-block bg-[#B4F461] hover:bg-[#B4F461]">Download Now</button>
+                        <!-- <button id="quota-btn" class="btn btn-block bg-[#B4F461] hover:bg-[#B4F461]"
+                            onclick="my_modal_3.showModal()">Donate Now</button>
+                        <dialog id="my_modal_3" class="modal text-center">
+                            <div class="modal-box">
+                                <h2 class="text-4xl font-bold">Congrats!</h2>
+                                <img class="w-8 mx-auto mt-3 mb-5" src="assets/coin.png" alt="">
+                                <p class="py-4">You Have Donated For Humankind</p>
+                                <h2 class="font-black">Successfully</h2>
+                                <div class="modal-action relative lg:right-36 right-20">
+                                    <form method="dialog ">
+                                        <button class="btn">Close Confirmation</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog> -->
                     </div>
                 </div>
             </div>
-
+        </div>
+        <div id="history-section" class="hidden">
+            <h1>Lorem ipsum dolor sit amet.</h1>
         </div>
     </main>
 
