@@ -13,3 +13,8 @@ function showButtonValue(id){
     document.getElementById('history-section').classList.add('hidden')
     document.getElementById(id).classList.remove('hidden')
 }
+// function buttonColorSwap(id){
+//     document.getElementById('donation-btn').classList.add('bg-[#B4F461]', 'hover:bg-[#B4F461]')
+//     document.getElementById('history-btn').classList.add('bg-[#B4F461]', 'hover:bg-[#B4F461]')
+//     document.getElementById(id).classList.remove('bg-[#B4F461]', 'hover:bg-[#B4F461]')
+// }

@@ -79,3 +79,14 @@ document.getElementById('quota-btn').addEventListener('click', function(){
         alert('Its Not A Number, Please provide a number')
     }
 })
+
+const histriBtn=document.getElementById('history-btn')
+const donateBtn=document.getElementById('donation-btn')
+histriBtn.addEventListener('click', function(){
+    histriBtn.classList.add("bg-[#B4F461]", "hover:bg-[#B4F461]")
+    donateBtn.classList.remove("bg-[#B4F461]", "hover:bg-[#B4F461]")
+})
+donateBtn.addEventListener('click', function(){
+    donateBtn.classList.add("bg-[#B4F461]", "hover:bg-[#B4F461]")
+    histriBtn.classList.remove("bg-[#B4F461]", "hover:bg-[#B4F461]")
+})
