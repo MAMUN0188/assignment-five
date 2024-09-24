@@ -5,4 +5,3 @@ document.getElementById('donation-btn').addEventListener('click', function(){
 document.getElementById('history-btn').addEventListener('click', function(){
     showButtonValue('history-section')
 })
-

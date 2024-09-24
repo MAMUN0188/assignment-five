@@ -23,7 +23,7 @@ document.getElementById('noakhali-btn').addEventListener('click', function(){
         div.className="border px-8 py-6 mb-3 lg:w-[1200px] lg:mx-auto mx-5 rounded-xl mt-2"
     }
     else{
-        alert('Its Not A Number, Please provide a number')
+        alert('Invalid Donate Amount!')
     }
 })
 document.getElementById('feni-btn').addEventListener('click', function(){
@@ -50,7 +50,7 @@ document.getElementById('feni-btn').addEventListener('click', function(){
         
     }
     else{
-        alert('Its Not A Number, Please provide a number')
+        alert('Invalid Donate Amount!')
     }
 })
 document.getElementById('quota-btn').addEventListener('click', function(){
@@ -76,7 +76,7 @@ document.getElementById('quota-btn').addEventListener('click', function(){
         div.className="border px-8 py-6 mb-3 lg:w-[1200px] lg:mx-auto mx-5 rounded-xl mt-2"
     }
     else{
-        alert('Its Not A Number, Please provide a number')
+        alert('Invalid Donate Amount!')
     }
 })
 
