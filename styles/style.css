@@ -3,18 +3,9 @@
 .lexend{
   font-family: "Lexend", sans-serif;
 }
-/* .width{
-    width: 1100px;
-} */
 .navigate{
   position: sticky;
   top: 0;
   z-index: 1000;
   background-color: #F9F7F3;
 }
-/* .navigate2{
-  position: sticky;
-  top: 90px;
-  z-index: 1000;
-  background-color: #F9F7F3;
-} */
